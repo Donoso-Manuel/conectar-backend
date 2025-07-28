@@ -10,7 +10,11 @@ const newsRoutes = require('./routes/news.Routes')
 const partnerRoutes = require('./routes/partner.Routes')
 const projectRoutes = require('./routes/project.Routes')
 
-app.use(cors());
+app.use(cors({
+    origin: "https://conectar-frontend.onrender.com",
+    methods: ["GET", "POST", "PUT", "DELETE","PATCH"],
+    credentials: true,
+}));
 app.use(express.json());
 
 app.use('/api/ods', odsRoutes);
