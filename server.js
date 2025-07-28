@@ -11,7 +11,7 @@ const partnerRoutes = require('./routes/partner.Routes')
 const projectRoutes = require('./routes/project.Routes')
 
 app.use(cors({
-    origin: "https://conectar-frontend.onrender.com",
+    origin: ["https://conectar-frontend.onrender.com","https://www.odsconectarlatam.cl"],
     methods: ["GET", "POST", "PUT", "DELETE","PATCH"],
     credentials: true,
 }));
