@@ -22,5 +22,5 @@ app.use('/api/projects', projectRoutes)
 const PORT = process.env.PORT;
 
 app.listen(PORT, () =>{
-    console.log(`Servidor corriendo en http://localhost:${PORT}`)
+    console.log(`Servidor corriendo en el puerto ${PORT}`)
 })
